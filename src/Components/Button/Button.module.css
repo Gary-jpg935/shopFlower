@@ -1,0 +1,16 @@
+.button_green{
+    background-color: green;
+}
+.button_red{
+    background-color: red;
+}
+.button{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgba(241, 112, 112, 0.382);
+    color: white;
+    width: 50px;
+    margin-top: 25px;
+    justify-content: center;
+}

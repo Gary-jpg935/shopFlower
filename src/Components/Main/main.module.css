@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(241, 112, 112, 0.382);
+    border: 2px solid rgba(128, 0, 128, 0.54);
+    padding: 20px;
+    border-radius: 10px;
+}
+.container_title{
+    color: white;
+}
+.input{
+    border-radius: 5px;
+}

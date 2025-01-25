@@ -1,0 +1,8 @@
+.basket{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #C1DFC4;
+    width: 1000px;
+    height: 1000px;
+}

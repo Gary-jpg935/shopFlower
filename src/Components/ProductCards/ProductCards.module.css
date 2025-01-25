@@ -1,0 +1,10 @@
+.productCards{
+    display: flex;
+    flex-direction: column;
+    padding: 800px 86px 40px 103px;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    box-shadow: 8px 10px 35px 7px rgba(128, 128, 128, 0.542);
+    margin-top: 169px;
+}

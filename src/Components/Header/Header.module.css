@@ -1,0 +1,21 @@
+.Header{
+    display: flex;
+    padding: 60px 96px;
+    gap: 80px;
+    background-color: #C4C4C4;
+    align-items: center;
+    justify-content: center;
+}
+.BtnHeader{
+    width: 235px;
+    height: 90px;
+    font-size: 50px;
+}
+.input{
+    width: 2814px;
+    height: 105px;
+    border-radius: 15px;
+}
+.HeaderLogo{
+    font-size: 70px;
+}

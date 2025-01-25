@@ -1,0 +1,25 @@
+
+.productBasketCont{
+    display: flex;
+    gap: 100px;
+    border: 2px solid #c1dfc4ad;
+    border-radius: 15px;
+}
+.btnBasketPlus{
+    width: 250px;
+    font-size: 30px;
+    background-color: #C1DFC4;
+    height: 80px;
+}
+.btnBasketMinus{
+    width: 250px;
+    font-size: 30px;
+    height: 80px;
+    background-color: #C1DFC4;
+}
+.btnBasketDelete{
+    width: 270px;
+    font-size: 30px;
+    height: 80px;
+    background-color: #C1DFC4;
+}

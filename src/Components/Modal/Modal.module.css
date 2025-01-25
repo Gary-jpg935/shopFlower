@@ -1,0 +1,43 @@
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(90, 87, 87, 0.791);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.modal {
+    display: flex;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    padding: 20px 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 20px;
+    background-color: rgba(241, 112, 112, 0.382);
+    border: 2px solid rgba(128, 0, 128, 0.54);
+}
+.btnClose {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+.labelModal {
+    color: white;
+}
+.input_modal {
+    width: 200px;
+    height: 15px;
+}
+.sendModal {
+}
