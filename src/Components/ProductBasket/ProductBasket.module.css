@@ -1,4 +1,7 @@
-
+.productBasket{
+    display: flex;
+    flex-direction: column;
+}
 .productBasketCont{
     display: flex;
     gap: 100px;
@@ -6,20 +9,20 @@
     border-radius: 15px;
 }
 .btnBasketPlus{
-    width: 250px;
+    width: 80px;
     font-size: 30px;
     background-color: #C1DFC4;
     height: 80px;
 }
 .btnBasketMinus{
-    width: 250px;
-    font-size: 30px;
+    width: 80px;
     height: 80px;
     background-color: #C1DFC4;
+    font-size: 80px;
 }
 .btnBasketDelete{
     width: 270px;
-    font-size: 30px;
     height: 80px;
     background-color: #C1DFC4;
+    font-size: 40px;
 }

@@ -15,82 +15,83 @@
     color: white;
     align-items: center;
     justify-content: center;
-
-    padding: 0 0 201px 0;
+    padding: 0 0 20px 0;
 }
 .textEntregas{
-    font-size: 57px;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
 }
 .textPlantas{
-    font-size: 86px;
-    margin-top: 66px;
+    font-size: 30px;
+    margin-top: 30px;
+    color: black;
 }
 .greenland{
     display: flex;
-
     background-repeat: no-repeat;
-    background-position-x: -1%;
-    background-position-y: 85%;
     align-items: center;
     justify-content: center;
-    width: 1550px;
 }
 .textGreenland{
-    font-size: 225px;
+    font-size: 35px;
     font-family: Chelsea Marcket;
-    margin-top: 278px;
+    margin-top: 70px;
+    color: black;
 }
 .textPlaneta{
-    font-size: 140px;
-    margin-top: 28px;
+    font-size: 30px;
+    margin-top: 30px;
+    color: black;
 }
 .textTierra{
-    font-size: 86px;
-    margin-top: 30px;
+    font-size: 25px;
+    margin-top: 25px;
+    color: black;
 }
 
 .contFlower{
     display: flex;
-    gap: 160px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
-    margin-top: 176px;
+    margin-top: 40px;
 }
 .contGrat{
     display: flex;
-    padding: 74px 40px 40px 250px;
+    padding: 40px 20px 40px 70px;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 30px;
     border-radius: 10px;
     background-repeat: no-repeat;
-    background-position-x: 10%;
-    background-position-y: 60%;
     box-shadow: 8px 10px 35px 7px rgba(128, 128, 128, 0.542);
+    background-color: #4a9c817d;
+    border: 2px solid #4a9c81da;
 }
 .contCliente{
     display: flex;
-    padding: 74px 40px 40px 250px;
+    padding: 40px 20px 40px 70px;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
-    box-shadow: 8px 10px 35px 7px rgba(128, 128, 128, 0.542);
+    font-size: 30px;
     border-radius: 10px;
     background-repeat: no-repeat;
-    background-position-x: 10%;
-    background-position-y: 60%;
+    box-shadow: 8px 10px 35px 7px rgba(128, 128, 128, 0.542);
+    background-color: #4a9c817d;
+    border: 2px solid #4a9c81da;
 }
 .contDe{
     display: flex;
-    padding: 74px 40px 40px 250px;
+    padding: 40px 20px 40px 70px;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
-    box-shadow: 8px 10px 35px 7px rgba(128, 128, 128, 0.542);
+    font-size: 30px;
     border-radius: 10px;
     background-repeat: no-repeat;
-    background-position-x: 10%;
-    background-position-y: 60%;
+    box-shadow: 8px 10px 35px 7px rgba(128, 128, 128, 0.542);
+    background-color: #4a9c817d;
+    border: 2px solid #4a9c81da;
 }
 
 
