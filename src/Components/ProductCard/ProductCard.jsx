@@ -2,8 +2,9 @@ import { ProductCards } from "../ProductCards/ProductCards"
 import styles from "./ProductCard.module.css"
 
     export function ProductCard({item}) {
-        console.log(item)
+        const Component = function() {return item.img} 
         return <div className={`${styles.card} ${styles.card1}`}>
+            <Component/>
         <h2 className={styles.title}>{item.title}</h2>
         <p className={styles.description}>{item.description}</p>
         <div className={styles.productCard}>

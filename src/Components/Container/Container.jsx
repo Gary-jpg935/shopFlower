@@ -1,48 +1,62 @@
 import { ProductCard } from "../ProductCard/ProductCard"
+import {ReactComponent as Flower1} from '../../Assets/img/flower1.svg'
+import {ReactComponent as Flower2} from '../../Assets/img/flower2.svg'
+import {ReactComponent as Flower3} from '../../Assets/img/flower3.svg'
+import {ReactComponent as Flower4} from '../../Assets/img/flower4.svg'
+import {ReactComponent as Flower5} from '../../Assets/img/flower5.svg'
+import {ReactComponent as Flower6} from '../../Assets/img/flower6.svg'
 import styles from "./Container.module.css"
 
 
 const products = [{
     title: `flower`,
     description: `white flower`,
-    price: 13,
+    price: 10,
+    img: <Flower1/>
 },
 {
     title: `flower`,
     description: `yellow flower`,
-    price: 18
+    price: 9,
+    img: <Flower2/>
 },
 {
     title: `flower`,
     description: `green flower`,
-    price: 20
+    price: 8.7,
+    img: <Flower3/>
 },
 {
     title: `flower`,
     description: `flower in a pot`,
-    price: 16
+    price: 11.2,
+    img: <Flower4/>
 },
 {
     title: `flower`,
     description: `lily lower`,
-    price: 35
+    price: 6,
+    img: <Flower5/>
 },
 {
     title: `flower`,
     description: `rose flower`,
-    price: 50
+    price: 7,
+    img: <Flower6/>
 }]
 
 export function Container () {
     return <div className={styles.container}>
         <div className={styles.cont}>
-            <p className={styles.textEntregas}>Entregas a domicilio gratis </p>
-            <p className={styles.textPlantas}>Plantas y Semillas   Macetas   Accesorios  Blog Contacto</p>
-            <div className={styles.greenland}>
-                <p className={styles.textGreenland}>Green Land </p>
+            <div className={styles.contTexts}>
+                <p className={styles.textEntregas}>Entregas a domicilio gratis </p>
+                <p className={styles.textPlantas}>Plantas y Semillas   Macetas   Accesorios  Blog Contacto</p>
+                <div className={styles.greenland}>
+                    <p className={styles.textGreenland}>Green Land </p>
+                </div>
+                <p className={styles.textPlaneta}>El planeta de las plantas</p>
+                <p className={styles.textTierra}>De nuestra tierra hasta tu hogar </p>
             </div>
-            <p className={styles.textPlaneta}>El planeta de las plantas</p>
-            <p className={styles.textTierra}>De nuestra tierra hasta tu hogar </p>
         </div>
 
         <div className={styles.contFlower}>
@@ -84,7 +98,7 @@ export function Container () {
                 <p className={styles.siguenosText}>Síguenos...</p>
                 <div className={styles.contSiguenos}>
                     <div className={`${styles.imgSiguenos} ${styles.imgSiguenos1}`}></div>
-                    <div className={`${styles.imgSiguenos} ${styles.imgSiguenos2}`}></div>
+                    <div className={`${styles.imgSiguenos} ${styles.imgSiguenos2}`}><oldPhone/></div>
                     <div className={`${styles.imgSiguenos} ${styles.imgSiguenos3}`}></div>
                     <div className={`${styles.imgSiguenos} ${styles.imgSiguenos4}`}></div>
                 </div>

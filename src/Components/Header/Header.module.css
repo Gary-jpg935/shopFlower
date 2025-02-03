@@ -3,8 +3,21 @@
     padding: 20px;
     background-color: #4a9c8199;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     justify-content: space-between;
+}
+.btnContHeader{
+    display: flex;
+    gap: 30px;
+}
+.btnBasket{
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid #4A9C80;
+    background-color: #4a9c8199;
+    border-radius: 5px;
+    color: white;
 }
 .BtnHeader{
     width: 70px;

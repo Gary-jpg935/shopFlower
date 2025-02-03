@@ -6,6 +6,7 @@
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 999;
     top: 0;
     bottom: 0;
 }
@@ -21,14 +22,15 @@
     justify-content: center;
     border-radius: 10px;
     gap: 20px;
-    background-color: rgba(241, 112, 112, 0.382);
-    border: 2px solid rgba(128, 0, 128, 0.54);
+    background-color: #4a9c817d;
+    border: 2px solid #4a9c81da;
 }
 .btnClose {
     position: absolute;
     right: 10px;
     top: 10px;
     width: 50px;
+    border: 2px solid #4a9c81da;
     height: 30px;
     border-radius: 10px;
 }
