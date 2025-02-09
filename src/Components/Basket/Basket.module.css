@@ -3,15 +3,52 @@
     flex-direction: column;
     position: fixed;
     background-color: #C1DFC4;
-    width: 430px;
+    width: 350px;
     top: 0;
     left: 0;
+    gap: 30px;
     background-color: #4a9c8199;
-    height: 1000px;
+    height: 100vh;
+    align-items: center;
+    padding-top: 50px;
     z-index: 999;
+    padding-bottom: 160px;
 }
 .btnCloseBasket{
+    position: absolute;
+    top: 0;
     width: 20px;
     height: 20px;
+    left: 0;
     background-color: rgba(186, 105, 105, 0.823);
+}
+.contDeleteAll{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    bottom: 30px;
+}
+.deleteAll{
+    width: 150px;
+    height: 40px;
+    background-color: #C1DFC4;
+    font-size: 25px;
+    color: white;
+    border: 2px solid #4A9C80;
+    background-color: #4a9c8199;
+}
+.countPrice{
+    font-size: 25px;
+    color: white;
+}
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow-y: scroll;
+    height: 100%;
 }
