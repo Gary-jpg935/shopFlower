@@ -18,15 +18,15 @@ const items = [{
 },
 {
     title:`flower`,
-    description: `black flower`,
-    price: 19,
+    description: `green flower`,
+    price: 16,
     id: 3,
     total: 1
 },
 {
     title:`flower`,
-    description: `black flower`,
-    price: 19,
+    description: `yellow flower`,
+    price: 14,
     id: 4,
     total: 1
 }]
