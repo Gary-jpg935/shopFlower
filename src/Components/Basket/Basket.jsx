@@ -1,37 +1,14 @@
 import styles from "./Basket.module.css"
 import { ProductBasket } from "../ProductBasket/ProductBasket"
 import { useState } from "react"
+import { items } from "../../Utils/BasketProducts"
+import { useSelector } from "react-redux"
 
-const items = [{
-    title: `flower`,
-    description: `white flower`,
-    price: 18,
-    id: 1,
-    total: 1
-},
-{
-    title:`flower`,
-    description: `black flower`,
-    price: 19,
-    id: 2,
-    total: 1
-},
-{
-    title:`flower`,
-    description: `green flower`,
-    price: 16,
-    id: 3,
-    total: 1
-},
-{
-    title:`flower`,
-    description: `yellow flower`,
-    price: 14,
-    id: 4,
-    total: 1
-}]
+
 
 export function Basket ({openIsBasket}) {
+    const basketProducts = useSelector(state => state.basketProducts.items)
+    console.log(basketProducts)
     function handleClick() {
        openIsBasket(false)
     }
@@ -48,10 +25,6 @@ export function Basket ({openIsBasket}) {
         setBasketItems([])
     }
 
-    // передать сумму всех продуктов корзины
-    // продукты корзины хранятся в состоянии basketItems
-    // для получения суммы всех элементов basketItems - использовать метод массива reduce
-
 
     return <div className={styles.basket}>
         <button className={styles.btnCloseBasket} onClick={handleClick}></button>
@@ -61,7 +34,7 @@ export function Basket ({openIsBasket}) {
             })}
         </div>
         <div className={styles.contDeleteAll}>
-            <p className={styles.countPrice}>Amount of goods: {basketItems.reduce((sum, item) => item.price + sum, 0)}$</p>
+            <p className={styles.countPrice}>Amount of goods: {basketItems.reduce((sum, item) => item.price * item.total + sum, 0)}$</p>
             <button className={styles.deleteAll} onClick={handleDeleteAll}>Delete all</button>
         </div>
     </div>

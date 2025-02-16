@@ -13,7 +13,7 @@ export function ProductBasket ({item, handleDelete, basketItems, setBasketItems}
     
     function setCountMinus() {
         setBasketItems(basketItems.map((minus) => {
-            if(item.id === minus.id) {
+            if(item.id === minus.id && minus.total > 1) {
                 minus.total = minus.total - 1
             }
             return minus
@@ -35,7 +35,4 @@ export function ProductBasket ({item, handleDelete, basketItems, setBasketItems}
             </div>
         </div>
     </div>
-
-    // сделать функцию на уменьшение счетчика
-    // объединить функцию уменьшения и увеличения
 }
