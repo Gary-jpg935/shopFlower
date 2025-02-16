@@ -7,9 +7,36 @@ const initialState = {
 
 export const basketProductsSlice = createSlice({
     name: "items",
-    initialState
+    initialState,
+    reducers: {
+        deleteProduct: (state, action) => {
+            state.items = state.items.filter((elem) => elem.id !== action.payload.id)
+        },
+        deleteAllProducts: (state) => {
+            state.items = []
+        },
+        setAllProducts: (state, action) => {
+            state.items = action.payload
+        },
+        setCountPlus: (state, action) => {
+            state.items = state.items.map((elem) => {
+                if(action.payload.id === elem.id) {
+                    elem.total = elem.total + 1
+                }
+                return elem
+            })
+        },
+        setCountMinus: (state, action) => {
+            state.items = state.items.map((elem) => {
+                if(action.payload.id === elem.id && elem.total > 1) {
+                    elem.total = elem.total - 1
+                }
+                return elem
+            })
+        }
+    }
 })
 
-export const {} = basketProductsSlice.actions
+export const {deleteProduct, deleteAllProducts, setAllProducts, setCountPlus, setCountMinus} = basketProductsSlice.actions
 
 export default basketProductsSlice.reducer
