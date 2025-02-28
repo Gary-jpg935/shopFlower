@@ -33,10 +33,15 @@ export const basketProductsSlice = createSlice({
                 }
                 return elem
             })
+        },
+        addProduct: (state, action) => {
+            
         }
     }
 })
 
-export const {deleteProduct, deleteAllProducts, setAllProducts, setCountPlus, setCountMinus} = basketProductsSlice.actions
+
+
+export const {deleteProduct, deleteAllProducts, setAllProducts, setCountPlus, setCountMinus, addProduct} = basketProductsSlice.actions
 
 export default basketProductsSlice.reducer
