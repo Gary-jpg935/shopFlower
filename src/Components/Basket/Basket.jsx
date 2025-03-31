@@ -3,7 +3,7 @@ import { ProductBasket } from "../ProductBasket/ProductBasket"
 import { useState } from "react"
 import { items } from "../../Utils/BasketProducts"
 import { useDispatch, useSelector } from "react-redux"
-import { deleteProduct, deleteAllProducts, setAllProducts} from "../../Redux/Basket"
+import { deleteProduct, deleteAllProducts, setAllProducts, addProduct} from "../../Redux/Basket"
 
 
 export function Basket ({openIsBasket}) {
